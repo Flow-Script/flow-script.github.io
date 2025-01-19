@@ -1,0 +1,1194 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="eec3aa8e-1443-4dee-a860-7762f4b00b35" data-section-id="eec3aa8e-1443-4dee-a860-7762f4b00b35">
+
+<div id="root">
+    <nav id="navbar" class="fixed w-full z-50 bg-neutral-900/90 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-white">FlowScript</div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#hero" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#features" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Features</a>
+                        <a href="#howItWorks" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">How It Works</a>
+                        <a href="#templates" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Templates</a>
+                        <a href="#pricing" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+                        <a href="#blog" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+                        <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-neutral-800 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-neutral-900">
+                <a href="#hero" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#features" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Features</a>
+                <a href="#howItWorks" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">How It Works</a>
+                <a href="#templates" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Templates</a>
+                <a href="#pricing" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
+                <a href="#blog" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Blog</a>
+                <a href="#contact" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('#mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</div></element><element id="e9deb282-c804-4d11-bb20-690f5637487e" data-section-id="e9deb282-c804-4d11-bb20-690f5637487e">
+
+<section id="hero" class="relative min-h-screen bg-neutral-900 pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+        <div class="flex flex-col items-center justify-center min-h-[80vh] text-center">
+            <!-- Animated gradient background -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/20 to-pink-600/20 animate__animated animate__fadeIn animate__slower"></div>
+            </div>
+
+            <!-- Hero content -->
+            <div class="relative z-10 animate__animated animate__fadeInUp">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    Empowering Innovation with
+                    <span class="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 text-transparent bg-clip-text">
+                        Seamless Workflow Automation
+                    </span>
+                </h1>
+                
+                <p class="text-gray-300 text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                    Create, customize, and execute automated workflows using our intuitive, AI-driven platform. No coding required.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                    <a href="#features" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-all duration-300 animate__animated animate__pulse animate__infinite">
+                        Get Started Free
+                    </a>
+                </div>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-400">1M+</div>
+                        <div class="text-gray-400">Active Users</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-400">5K+</div>
+                        <div class="text-gray-400">Templates</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-pink-400">99.9%</div>
+                        <div class="text-gray-400">Uptime</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-blue-400">24/7</div>
+                        <div class="text-gray-400">Support</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section></element><element id="dd04c698-509b-4074-b8bc-1fce69a7c229" data-section-id="dd04c698-509b-4074-b8bc-1fce69a7c229">
+
+<section id="features" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Powerful Features for Seamless Automation</h2>
+            <p class="text-xl text-gray-600">Everything you need to build and automate your workflows</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="p-6 bg-neutral-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp">
+                <div class="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Dynamic Workflow Builder</h3>
+                <p class="text-gray-600">Create complex workflows visually with our intuitive drag-and-drop interface. No coding required.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="p-6 bg-neutral-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                <div class="h-12 w-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">AI-Powered Automation</h3>
+                <p class="text-gray-600">Leverage cutting-edge AI for intelligent decision-making and real-time optimizations.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="p-6 bg-neutral-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                <div class="h-12 w-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Pre-Built Templates</h3>
+                <p class="text-gray-600">Start quickly with ready-to-use templates for popular automation workflows.</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="p-6 bg-neutral-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
+                <div class="h-12 w-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Real-Time Analytics</h3>
+                <p class="text-gray-600">Monitor performance metrics and optimize your workflows in real-time.</p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="p-6 bg-neutral-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.8s;">
+                <div class="h-12 w-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Integration Capabilities</h3>
+                <p class="text-gray-600">Connect seamlessly with popular third-party services and APIs.</p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="p-6 bg-neutral-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 1s;">
+                <div class="h-12 w-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                    <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Scalable Architecture</h3>
+                <p class="text-gray-600">Build workflows of any size with our flexible and scalable platform.</p>
+            </div>
+        </div>
+    </div>
+</section></element><element id="0667cc20-6b06-4726-8258-606e9c162c9a" data-section-id="0667cc20-6b06-4726-8258-606e9c162c9a">
+
+<section id="howItWorks" class="py-20 bg-neutral-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-4xl font-bold text-white mb-4">How It Works</h2>
+            <p class="text-xl text-gray-400">Create powerful automation workflows in minutes</p>
+        </div>
+
+        <div class="relative">
+            <!-- Timeline steps -->
+            <div class="grid md:grid-cols-3 gap-8 relative z-10">
+                <!-- Step 1 -->
+                <div class="bg-neutral-800 rounded-xl p-6 transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInLeft">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">1</div>
+                        <h3 class="text-white text-xl font-bold ml-4">Choose Template</h3>
+                    </div>
+                    <p class="text-gray-400">Select from our library of pre-built workflow templates or start from scratch with a blank canvas.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-neutral-800 rounded-xl p-6 transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInLeft" style="animation-delay: 0.2s;">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">2</div>
+                        <h3 class="text-white text-xl font-bold ml-4">Customize Flow</h3>
+                    </div>
+                    <p class="text-gray-400">Drag and drop nodes to customize your workflow. Connect actions and set up conditions visually.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-neutral-800 rounded-xl p-6 transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInLeft" style="animation-delay: 0.4s;">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">3</div>
+                        <h3 class="text-white text-xl font-bold ml-4">Deploy & Monitor</h3>
+                    </div>
+                    <p class="text-gray-400">Launch your workflow and monitor its performance in real-time with detailed analytics.</p>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="mt-16 text-center animate__animated animate__fadeIn">
+                <a href="#features" class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-8 rounded-lg hover:opacity-90 transition-opacity duration-300">
+                    Start Building Your Workflow
+                </a>
+            </div>
+        </div>
+    </div>
+</section></element><element id="d11c70cc-b47d-44e4-8695-a2922bab30ea" data-section-id="d11c70cc-b47d-44e4-8695-a2922bab30ea">
+
+<section id="templates" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Pre-Built Templates</h2>
+            <p class="text-xl text-gray-600">Get started quickly with our collection of professional workflow templates</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Template 1 -->
+            <div class="bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp">
+                <div class="p-6">
+                    <div class="bg-blue-100 rounded-lg p-4 mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Business Plan Generator</h3>
+                    <p class="text-gray-600 mb-4">Automatically generate comprehensive business plans with AI-powered insights.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-blue-600 font-semibold">Popular template</span>
+                        <button class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">Use Template</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 2 -->
+            <div class="bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                <div class="p-6">
+                    <div class="bg-purple-100 rounded-lg p-4 mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">LinkedIn Job Scraper</h3>
+                    <p class="text-gray-600 mb-4">Automate job search and data collection from LinkedIn with customizable filters.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-purple-600 font-semibold">Trending</span>
+                        <button class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">Use Template</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Template 3 -->
+            <div class="bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                <div class="p-6">
+                    <div class="bg-green-100 rounded-lg p-4 mb-4">
+                        <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Data Processing Pipeline</h3>
+                    <p class="text-gray-600 mb-4">Process and analyze large datasets with automated workflows and AI insights.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-green-600 font-semibold">New</span>
+                        <button class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">Use Template</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Template Categories -->
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
+            <button class="p-4 bg-neutral-100 rounded-lg hover:bg-neutral-200 transition-colors text-center">
+                <span class="font-semibold">Business</span>
+                <span class="block text-sm text-gray-600">45+ templates</span>
+            </button>
+            <button class="p-4 bg-neutral-100 rounded-lg hover:bg-neutral-200 transition-colors text-center">
+                <span class="font-semibold">Marketing</span>
+                <span class="block text-sm text-gray-600">32+ templates</span>
+            </button>
+            <button class="p-4 bg-neutral-100 rounded-lg hover:bg-neutral-200 transition-colors text-center">
+                <span class="font-semibold">Data Analysis</span>
+                <span class="block text-sm text-gray-600">28+ templates</span>
+            </button>
+            <button class="p-4 bg-neutral-100 rounded-lg hover:bg-neutral-200 transition-colors text-center">
+                <span class="font-semibold">Integration</span>
+                <span class="block text-sm text-gray-600">50+ templates</span>
+            </button>
+        </div>
+
+        <!-- Browse All CTA -->
+        <div class="mt-16 text-center">
+            <a href="#" class="inline-block bg-neutral-900 text-white font-bold py-4 px-8 rounded-lg hover:bg-neutral-800 transition-colors">
+                Browse All Templates
+            </a>
+        </div>
+    </div>
+</section></element><element id="ade36f71-e354-4d2f-a3ee-4e28840ff3c9" data-section-id="ade36f71-e354-4d2f-a3ee-4e28840ff3c9">
+
+<section id="pricing" class="py-20 bg-neutral-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-4xl font-bold text-white mb-4">Simple, Transparent Pricing</h2>
+            <p class="text-xl text-gray-400">Choose the perfect plan for your automation needs</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Free Plan -->
+            <div class="bg-neutral-800 rounded-2xl p-8 transition-transform duration-300 hover:-translate-y-2 animate__animated animate__fadeInUp">
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-bold text-white mb-4">Starter</h3>
+                    <div class="text-4xl font-bold text-white mb-2">Free</div>
+                    <p class="text-gray-400">Perfect for getting started</p>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center text-gray-300">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        5 Workflow Templates
+                    </li>
+                    <li class="flex items-center text-gray-300">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        100 Monthly Actions
+                    </li>
+                    <li class="flex items-center text-gray-300">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Basic Analytics
+                    </li>
+                </ul>
+                <button class="w-full py-3 px-6 rounded-lg bg-white text-neutral-900 font-bold hover:bg-gray-100 transition-colors">
+                    Get Started Free
+                </button>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="bg-blue-600 rounded-2xl p-8 transform scale-105 md:scale-110 shadow-xl transition-transform duration-300 hover:-translate-y-2 animate__animated animate__fadeInUp">
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                    <span class="bg-gradient-to-r from-purple-600 to-pink-600 text-white text-sm font-bold px-4 py-1 rounded-full">MOST POPULAR</span>
+                </div>
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-bold text-white mb-4">Professional</h3>
+                    <div class="text-4xl font-bold text-white mb-2">$49<span class="text-lg">/month</span></div>
+                    <p class="text-blue-100">For growing businesses</p>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center text-white">
+                        <svg class="w-5 h-5 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Unlimited Templates
+                    </li>
+                    <li class="flex items-center text-white">
+                        <svg class="w-5 h-5 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        10,000 Monthly Actions
+                    </li>
+                    <li class="flex items-center text-white">
+                        <svg class="w-5 h-5 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Advanced Analytics
+                    </li>
+                    <li class="flex items-center text-white">
+                        <svg class="w-5 h-5 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Priority Support
+                    </li>
+                </ul>
+                <button class="w-full py-3 px-6 rounded-lg bg-white text-blue-600 font-bold hover:bg-gray-100 transition-colors">
+                    Start Pro Trial
+                </button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="bg-neutral-800 rounded-2xl p-8 transition-transform duration-300 hover:-translate-y-2 animate__animated animate__fadeInUp">
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-bold text-white mb-4">Enterprise</h3>
+                    <div class="text-4xl font-bold text-white mb-2">Custom</div>
+                    <p class="text-gray-400">For large organizations</p>
+                </div>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-center text-gray-300">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Custom Solutions
+                    </li>
+                    <li class="flex items-center text-gray-300">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Unlimited Actions
+                    </li>
+                    <li class="flex items-center text-gray-300">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        Dedicated Support
+                    </li>
+                    <li class="flex items-center text-gray-300">
+                        <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        SLA Available
+                    </li>
+                </ul>
+                <button class="w-full py-3 px-6 rounded-lg bg-white text-neutral-900 font-bold hover:bg-gray-100 transition-colors">
+                    Contact Sales
+                </button>
+            </div>
+        </div>
+    </div>
+</section></element><element id="06e5292e-a593-4d9a-87b0-5b98a2fc5139" data-section-id="06e5292e-a593-4d9a-87b0-5b98a2fc5139">
+
+<section id="testimonials" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Trusted by Innovators Worldwide</h2>
+            <p class="text-xl text-gray-600">See what our users are saying about their automation journey</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-neutral-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInLeft">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                        <span class="text-xl font-bold text-white">JD</span>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-gray-900">John Doe</h4>
+                        <p class="text-gray-600">CTO at TechCorp</p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="flex text-yellow-400 mb-2">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-700">"WorkflowAI has transformed how we handle our business processes. The visual interface makes it incredibly easy to create complex automation workflows."</p>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-neutral-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInLeft" style="animation-delay: 0.2s;">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                        <span class="text-xl font-bold text-white">SJ</span>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-gray-900">Sarah Johnson</h4>
+                        <p class="text-gray-600">Marketing Director</p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="flex text-yellow-400 mb-2">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-700">"The AI-powered features have helped us optimize our marketing workflows and save countless hours. The templates are a game-changer!"</p>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-neutral-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 animate__animated animate__fadeInLeft" style="animation-delay: 0.4s;">
+                <div class="flex items-center mb-6">
+                    <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
+                        <span class="text-xl font-bold text-white">MP</span>
+                    </div>
+                    <div class="ml-4">
+                        <h4 class="text-lg font-bold text-gray-900">Michael Park</h4>
+                        <p class="text-gray-600">Startup Founder</p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="flex text-yellow-400 mb-2">
+                        ★★★★★
+                    </div>
+                    <p class="text-gray-700">"As a startup, we needed something scalable and cost-effective. WorkflowAI delivered beyond our expectations with its powerful automation capabilities."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 bg-neutral-900 rounded-2xl p-8 animate__animated animate__fadeInUp">
+            <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-2">10k+</div>
+                <div class="text-gray-400">Active Users</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-2">1M+</div>
+                <div class="text-gray-400">Workflows Created</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-2">98%</div>
+                <div class="text-gray-400">Satisfaction Rate</div>
+            </div>
+            <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-2">50+</div>
+                <div class="text-gray-400">Countries</div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-16 text-center">
+            <a href="#pricing" class="inline-block bg-blue-600 text-white font-bold py-4 px-8 rounded-lg hover:bg-blue-700 transition-colors animate__animated animate__pulse animate__infinite">
+                Start Your Success Story
+            </a>
+        </div>
+    </div>
+</section></element><element id="b2218ea2-e543-4899-9cf8-e89a485425c4" data-section-id="b2218ea2-e543-4899-9cf8-e89a485425c4">
+
+<section id="blog" class="py-20 bg-neutral-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-4xl font-bold text-white mb-4">Latest from Our Blog</h2>
+            <p class="text-xl text-gray-400">Insights and updates from the world of workflow automation</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Blog Post 1 -->
+            <article class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-full">Tutorial</span>
+                        <span class="ml-4 text-gray-400 text-sm">5 min read</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Getting Started with AI-Powered Workflows</h3>
+                    <p class="text-gray-400 mb-4">Learn how to leverage AI capabilities in your automation workflows for maximum efficiency.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center">
+                                <span class="text-white font-semibold">AB</span>
+                            </div>
+                            <span class="ml-2 text-gray-400">Alex Brown</span>
+                        </div>
+                        <span class="text-gray-400 text-sm">June 12, 2023</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 2 -->
+            <article class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-green-600 text-white text-sm font-semibold px-3 py-1 rounded-full">Guide</span>
+                        <span class="ml-4 text-gray-400 text-sm">8 min read</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Best Practices for Template Creation</h3>
+                    <p class="text-gray-400 mb-4">Discover the key principles behind creating effective and reusable workflow templates.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-pink-600 rounded-full flex items-center justify-center">
+                                <span class="text-white font-semibold">SM</span>
+                            </div>
+                            <span class="ml-2 text-gray-400">Sarah Miller</span>
+                        </div>
+                        <span class="text-gray-400 text-sm">June 10, 2023</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Blog Post 3 -->
+            <article class="bg-neutral-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-yellow-600 text-white text-sm font-semibold px-3 py-1 rounded-full">News</span>
+                        <span class="ml-4 text-gray-400 text-sm">3 min read</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">New Integration Features Released</h3>
+                    <p class="text-gray-400 mb-4">Explore our latest platform updates including new third-party integrations and features.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                                <span class="text-white font-semibold">RJ</span>
+                            </div>
+                            <span class="ml-2 text-gray-400">Ryan Johnson</span>
+                        </div>
+                        <span class="text-gray-400 text-sm">June 8, 2023</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- View All Posts Button -->
+        <div class="mt-12 text-center animate__animated animate__fadeIn">
+            <a href="#" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition-colors">
+                View All Posts
+            </a>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="mt-20 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 md:p-12 animate__animated animate__fadeIn">
+            <div class="md:flex items-center justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-white mb-2">Stay Updated</h3>
+                    <p class="text-blue-100">Get the latest automation tips and updates directly in your inbox.</p>
+                </div>
+                <form class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email" class="px-6 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="px-6 py-3 bg-white text-blue-600 font-bold rounded-lg hover:bg-gray-100 transition-colors">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section></element><element id="cb451f66-b5c0-4153-9958-4e73276c5868" data-section-id="cb451f66-b5c0-4153-9958-4e73276c5868">
+
+<section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 animate__animated animate__fadeIn">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+            <p class="text-xl text-gray-600">Have questions? We're here to help you succeed</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div class="bg-neutral-50 p-8 rounded-2xl shadow-lg animate__animated animate__fadeInLeft">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                    </div>
+
+                    <div>
+                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                        <select id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                            <option value="support">Technical Support</option>
+                            <option value="sales">Sales Inquiry</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent" required></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="space-y-8 animate__animated animate__fadeInRight">
+                <div class="bg-neutral-900 p-8 rounded-2xl text-white">
+                    <h3 class="text-2xl font-bold mb-6">Other Ways to Connect</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-blue-400 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span>support@workflowai.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-6 h-6 text-blue-400 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-600 to-purple-600 p-8 rounded-2xl text-white">
+                    <h3 class="text-2xl font-bold mb-4">FAQ</h3>
+                    <div class="space-y-4">
+                        <div class="cursor-pointer">
+                            <h4 class="font-semibold mb-2">How quickly can I get started?</h4>
+                            <p class="text-blue-100">Sign up and start building workflows in minutes with our intuitive interface.</p>
+                        </div>
+                        <div class="cursor-pointer">
+                            <h4 class="font-semibold mb-2">Do you offer custom solutions?</h4>
+                            <p class="text-blue-100">Yes, our enterprise plan includes custom workflow development and dedicated support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Form submission handling
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your message. We will get back to you soon!');
+            form.reset();
+        });
+    </script>
+</section></element><element id="469bbc85-a4a9-4d7e-821e-d3741cdb2013" data-section-id="469bbc85-a4a9-4d7e-821e-d3741cdb2013">
+
+<footer id="footer" class="bg-neutral-900 text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Main Footer -->
+        <div class="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-bold text-white mb-4">WorkflowAI</h3>
+                <p class="text-gray-400">Empowering innovation with seamless workflow automation for businesses and developers.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#features" class="hover:text-white">Features</a></li>
+                    <li><a href="#templates" class="hover:text-white">Templates</a></li>
+                    <li><a href="#pricing" class="hover:text-white">Pricing</a></li>
+                    <li><a href="#blog" class="hover:text-white">Blog</a></li>
+                    <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources -->
+            <div>
+                <h4 class="text-white font-semibold mb-4">Resources</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white">Documentation</a></li>
+                    <li><a href="#" class="hover:text-white">API Reference</a></li>
+                    <li><a href="#" class="hover:text-white">Community</a></li>
+                    <li><a href="#" class="hover:text-white">Tutorials</a></li>
+                    <li><a href="#" class="hover:text-white">Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div>
+                <h4 class="text-white font-semibold mb-4">Stay Updated</h4>
+                <form class="space-y-4">
+                    <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded-lg bg-neutral-800 border border-neutral-700 focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white">
+                    <button type="submit" class="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="py-6 border-t border-neutral-800">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <div class="text-sm">
+                    © 2023 WorkflowAI. All rights reserved.
+                </div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
